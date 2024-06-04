@@ -1,0 +1,74 @@
+content="width=device-width, initial-scale=1.0">
+    <title>Розклад уроків</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .day {
+            width: 18%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .day h2 {
+            text-align: center;
+            color: #fff;
+            padding: 5px;
+            margin: 0;
+        }
+        .day:nth-child(odd) {
+            background-color: #f0f8ff;
+        }
+        .day:nth-child(even) {
+            background-color: #f5f5dc;
+        }
+        .day ul {
+            list-style: none;
+            padding: 0;
+        }
+        .day li {
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 3px;
+        }
+        .day li:nth-child(1) {
+            background-color: #ffcccc;
+        }
+        .day li:nth-child(2) {
+            background-color: #ccffcc;
+        }
+        .day li:nth-child(3) {
+            background-color: #ccccff;
+        }
+        .day li:nth-child(4) {
+            background-color: #ffffcc;
+        }
+        .day li:nth-child(5) {
+            background-color: #ffccff;
+        }
+        .day li:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .day li:first-child {
+            font-weight: bold;
+        }
+        .day li:last-child {
+            font-style: italic;
+        }
+        .day li:nth-last-child(2) {
+            text-decoration: underline;
+        }
+        .day li:nth-child(even):hover {
+            background-color: #b0e0e6;
+        }
+        .day li:nth-child(odd):hover {
+            background-color: #add8e6;
+        }
+    </style>
